@@ -1,0 +1,21 @@
+<label for="username">user Name: </label>
+<input
+  type="username"
+  name="username"
+  id="username"
+  placeholder="Enter User Name"
+  [(ngModel)]="username"
+/>
+
+<label for="pwd">Password:</label>
+<input
+  type="password"
+  name="pswd"
+  id="pwd"
+  placeholder="Enter Password"
+  [(ngModel)]="password"
+/>
+
+<button type="submit" (click)="login()">Submit</button>
+
+<p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
